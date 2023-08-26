@@ -8,20 +8,28 @@
 </head>
 <body>
     <section id="login">
-        <p>Faça login</p>
+        <p><strong>Faça login</strong></p>
         <div id="imagem">
             <img src="../imagens/pexels-miggy-rivera-5665104 (1).jpg" alt="Imagem">
         </div>
         <div id="formulario">
             <p>Faça Login</p>
-            <div id="email">
-                <form action="sla.php" method="get">
-                    <input type="text" name="email" id="email">
+            <div id="email" class="campo">
+                <form action="sla.php" method="get" autocomplete="on">
+                    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+                    <input type="text" name="email" id="email" autocomplete="email" required>
+                    <span id="person" class="material-symbols-outlined">
+                        person
+                        </span>
                     <label for="email">Email</label>
                 </form>
             </div>
-            <div id="senha">
-                <input type="password" name="senha" id="senha">
+            <div id="senha" class="campo" onclick="">
+                <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+                <input type="password" name="senha" id="senha" autocomplete="current-password" required>
+                <span id="key" class="material-symbols-outlined">
+                    key
+                </span>
                 <label for="senha">Senha</label>
             </div>
             <div id="entrar">
